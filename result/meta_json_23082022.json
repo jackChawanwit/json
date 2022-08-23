@@ -1,0 +1,730 @@
+{
+    "model":"@model_type",
+    "client":"@client_customercode",
+    "fields":{
+        "blastrecipient_member_id":{
+            "name":"Member ID",
+            "description":"nan",
+            "data_type":"string",
+            "aggregatable":true,
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "output_email":{
+            "name":"Respond to email",
+            "description":"Is this member likely to respond to the email campaign?",
+            "data_type":"boolean",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "output_sms":{
+            "name":"Respond to sms",
+            "description":"Is this member likely to respond to the SMS campaign?",
+            "data_type":"boolean",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "is_blast_on_weekday":{
+            "name":"Blast on weekday?",
+            "description":"Is this predicted blast on a weekday?",
+            "data_type":"boolean",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "is_blast_on_weekend":{
+            "name":"Blast on weekends?",
+            "description":"Is this predicted blast on a weekend?",
+            "data_type":"boolean",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "blast_on_day_of_week":{
+            "name":"Day of week",
+            "description":"Day of week of the predicted blast",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "blast_on_month_of_year":{
+            "name":"Month of year",
+            "description":"Month of year of the predicted blast",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "blast_on_day_of_month":{
+            "name":"Day of month",
+            "description":"Day of month of the predicted blast",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "member_gender":{
+            "name":"Member Gender",
+            "description":"nan",
+            "data_type":"categorical",
+            "aggregatable":"nan",
+            "selection":"single",
+            "values":[
+                
+            ],
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "card_tier":{
+            "name":"Membership Tier",
+            "description":"nan",
+            "data_type":"categorical",
+            "aggregatable":"nan",
+            "selection":"multiple",
+            "values":[
+                
+            ],
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "member_notify":{
+            "name":"Member Communications",
+            "description":"Members notification methods",
+            "data_type":"categorical",
+            "aggregatable":"nan",
+            "selection":"multiple",
+            "values":[
+                {
+                    "name":"Is member subscribed to email communications",
+                    "value":"member_sender_issubscribed"
+                },
+                {
+                    "name":"Is member subscribed to SMS communications",
+                    "value":"member_notifysms"
+                },
+                {
+                    "name":"Is member subscribed to PNS communications",
+                    "value":"member_pns_devices_pushalert"
+                }
+            ],
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "member_marital_status":{
+            "name":"Marital Status",
+            "description":"nan",
+            "data_type":"categorical",
+            "aggregatable":"nan",
+            "selection":"single",
+            "values":[
+                
+            ],
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "recency":{
+            "name":"Recency(days)",
+            "description":"The number of days since last purchase",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "recency_group":{
+            "name":"Recency group",
+            "description":"nan",
+            "data_type":"categorical",
+            "aggregatable":"nan",
+            "selection":"single",
+            "values":[
+                
+            ],
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "age":{
+            "name":"Member age(years)",
+            "description":"Member age in years. If age = 0, means membership age is unknown.",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "age_group":{
+            "name":"Member age group",
+            "description":"nan",
+            "data_type":"categorical",
+            "aggregatable":"nan",
+            "selection":"single",
+            "values":[
+                
+            ],
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "tenure_days":{
+            "name":"Membership tenure(days)",
+            "description":"No of days since member joined",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "tenure_years":{
+            "name":"Membership tenure(years)",
+            "description":"No of years since member joined",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "tenure_years_group":{
+            "name":"Membership tenure group",
+            "description":"nan",
+            "data_type":"categorical",
+            "aggregatable":"nan",
+            "selection":"single",
+            "values":[
+                
+            ],
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "no_of_vouchers_issued":{
+            "name":"Number of vouchers issued to member",
+            "description":"nan",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "no_of_vouchers_utilized":{
+            "name":"Number of vouchers utilized by member",
+            "description":"nan",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "perc_of_vouchers_utilized":{
+            "name":"Percentage of voucher utilized by members",
+            "description":"nan",
+            "data_type":"float",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "voucher_value_issued_last":{
+            "name":"Vouchers value issued",
+            "description":"nan",
+            "data_type":"group",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":{
+                "transact_transactpoints_past_7_days":{
+                    "name":"Transaction points past 7 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_30_days":{
+                    "name":"Transaction points past 30 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_90_days":{
+                    "name":"Transaction points past 90 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_180_days":{
+                    "name":"Transaction points past 180 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_270_days":{
+                    "name":"Transaction points past 270 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_360_days":{
+                    "name":"Transaction points past 360 days",
+                    "data_type":"integer"
+                }
+            }
+        },
+        "voucher_value_utilized_last":{
+            "name":"Voucher value utilized",
+            "description":"nan",
+            "data_type":"group",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":{
+                "transact_transactpoints_past_7_days":{
+                    "name":"Transaction points past 7 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_30_days":{
+                    "name":"Transaction points past 30 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_90_days":{
+                    "name":"Transaction points past 90 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_180_days":{
+                    "name":"Transaction points past 180 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_270_days":{
+                    "name":"Transaction points past 270 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_360_days":{
+                    "name":"Transaction points past 360 days",
+                    "data_type":"integer"
+                }
+            }
+        },
+        "no_of_transact_past":{
+            "name":"Number of transactions",
+            "description":"nan",
+            "data_type":"group",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":{
+                "transact_transactpoints_past_7_days":{
+                    "name":"Transaction points past 7 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_30_days":{
+                    "name":"Transaction points past 30 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_90_days":{
+                    "name":"Transaction points past 90 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_180_days":{
+                    "name":"Transaction points past 180 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_270_days":{
+                    "name":"Transaction points past 270 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_360_days":{
+                    "name":"Transaction points past 360 days",
+                    "data_type":"integer"
+                }
+            }
+        },
+        "transact_nettspent_past":{
+            "name":"Nett Spent",
+            "description":"nan",
+            "data_type":"group",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":{
+                "transact_transactpoints_past_7_days":{
+                    "name":"Transaction points past 7 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_30_days":{
+                    "name":"Transaction points past 30 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_90_days":{
+                    "name":"Transaction points past 90 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_180_days":{
+                    "name":"Transaction points past 180 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_270_days":{
+                    "name":"Transaction points past 270 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_360_days":{
+                    "name":"Transaction points past 360 days",
+                    "data_type":"integer"
+                }
+            }
+        },
+        "transact_transactpoints_past":{
+            "name":"Transaction points",
+            "description":"nan",
+            "data_type":"group",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":{
+                "transact_transactpoints_past_7_days":{
+                    "name":"Transaction points past 7 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_30_days":{
+                    "name":"Transaction points past 30 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_90_days":{
+                    "name":"Transaction points past 90 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_180_days":{
+                    "name":"Transaction points past 180 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_270_days":{
+                    "name":"Transaction points past 270 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_360_days":{
+                    "name":"Transaction points past 360 days",
+                    "data_type":"integer"
+                }
+            }
+        },
+        "no_of_vouchers_issued_by_campaign":{
+            "name":"Number of vouchers issued by campaign",
+            "description":"nan",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "no_of_vouchers_issued_by_campaign_and_utilized":{
+            "name":"Number of vouchers issued by campaign and utilized",
+            "description":"nan",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "no_of_past_campaign_hits":{
+            "name":"Number of past campaign hits",
+            "description":"nan",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "member_most_freq_outlet":{
+            "name":"Member most frequent outlet",
+            "description":"nan",
+            "data_type":"string",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "no_of_unique_visited_outlets":{
+            "name":"Number of uniquely visited outlet",
+            "description":"nan",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "no_of_blasts_sent":{
+            "name":"Number of blast sent",
+            "description":"Number of email blasts(not campaign) received in the past, at member level",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "no_of_blasts_read":{
+            "name":"Number of blast read",
+            "description":"Number of email blasts(not campaign) read in the past, at member level",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "interest_group":{
+            "name":"Member interest group",
+            "description":"nan",
+            "data_type":"categorical",
+            "aggregatable":"nan",
+            "selection":"multiple",
+            "values":[
+                
+            ],
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "campaignqualifiedlog_transact_autoid":{
+            "name":"Number of past campaign hits",
+            "description":"nan",
+            "data_type":"group",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":{
+                "transact_transactpoints_past_7_days":{
+                    "name":"Transaction points past 7 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_30_days":{
+                    "name":"Transaction points past 30 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_90_days":{
+                    "name":"Transaction points past 90 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_180_days":{
+                    "name":"Transaction points past 180 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_270_days":{
+                    "name":"Transaction points past 270 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_360_days":{
+                    "name":"Transaction points past 360 days",
+                    "data_type":"integer"
+                }
+            }
+        },
+        "rfm_frequency":{
+            "name":"RFM Raw frequency value",
+            "description":"Raw frequency value before binning",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "rfm_frequency_score":{
+            "name":"RFM Frequency Score",
+            "description":"Frequency score of RFM for the latest period",
+            "data_type":"categorical",
+            "aggregatable":"nan",
+            "selection":"single",
+            "values":[
+                
+            ],
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "rfm_monetary":{
+            "name":"RFM Raw monetary value",
+            "description":"Raw monetary value before binning",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "rfm_monetary_score":{
+            "name":"RFM Monetary Score",
+            "description":"Monetary score of RFM for the latest period",
+            "data_type":"categorical",
+            "aggregatable":"nan",
+            "selection":"single",
+            "values":[
+                
+            ],
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "rfm_recency":{
+            "name":"RFM Raw recency value",
+            "description":"Raw recency value before binning",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "rfm_recency_score":{
+            "name":"RFM Recency Score",
+            "description":"Recency score of RFM for the latest period",
+            "data_type":"categorical",
+            "aggregatable":"nan",
+            "selection":"single",
+            "values":[
+                
+            ],
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "rfm_score":{
+            "name":"RFM Score",
+            "description":"nan",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "rfm_segment":{
+            "name":"RFM Segment",
+            "description":"RFM segment for the latest period (eg. Lost, At Risk, etc)",
+            "data_type":"categorical",
+            "aggregatable":"nan",
+            "selection":"single",
+            "values":[
+                
+            ],
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "waiting_period":{
+            "name":"Waiting period",
+            "description":"Predicted optimal waiting period between campaigns",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "burnout":{
+            "name":"Burnout",
+            "description":"Is member likely to burnout from campaign?",
+            "data_type":"integer",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "lapse_prediction":{
+            "name":"Lapsed",
+            "description":"Is this member likely to lapse?",
+            "data_type":"boolean",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "lapse_threshold":{
+            "name":"Lapsed Threshold",
+            "description":"The number of days that correspond to \"lapsed\" status. Based on past purchase interval+2 standard deviation.",
+            "data_type":"float",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        },
+        "membership_status_active":{
+            "name":"Is Member active?",
+            "description":"nan",
+            "data_type":"boolean",
+            "aggregatable":"nan",
+            "selection":"nan",
+            "values":"",
+            "max_value":1,
+            "min_value":0,
+            "fields":""
+        }
+    }
+}
