@@ -675,6 +675,10 @@
                 {
                     "name":"Lost",
                     "value":"Lost"
+                },
+                {
+                    "name":"Lapsed",
+                    "value":"Lapsed"
                 }
             ]
         },
