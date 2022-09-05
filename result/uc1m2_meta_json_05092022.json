@@ -1,0 +1,709 @@
+{
+    "model":"uc1m1",
+    "client":"feomall",
+    "fields":{
+        "blastrecipient_member_id":{
+            "name":"Member ID",
+            "description":"",
+            "data_type":"string",
+            "aggregatable":true
+        },
+        "output_email":{
+            "name":"Respond to email",
+            "description":"Is this member likely to respond to the email campaign?",
+            "data_type":"boolean"
+        },
+        "output_sms":{
+            "name":"Respond to sms",
+            "description":"Is this member likely to respond to the SMS campaign?",
+            "data_type":"boolean"
+        },
+        "is_blast_on_weekday":{
+            "name":"Blast on weekday?",
+            "description":"Is this predicted blast on a weekday?",
+            "data_type":"boolean"
+        },
+        "is_blast_on_weekend":{
+            "name":"Blast on weekends?",
+            "description":"Is this predicted blast on a weekend?",
+            "data_type":"boolean"
+        },
+        "blast_on_day_of_week":{
+            "name":"Day of week",
+            "description":"Day of week of the predicted blast",
+            "data_type":"integer"
+        },
+        "blast_on_month_of_year":{
+            "name":"Month of year",
+            "description":"Month of year of the predicted blast",
+            "data_type":"integer"
+        },
+        "blast_on_day_of_month":{
+            "name":"Day of month",
+            "description":"Day of month of the predicted blast",
+            "data_type":"integer"
+        },
+        "member_gender":{
+            "name":"Member Gender",
+            "description":"",
+            "data_type":"categorical",
+            "selection":"single",
+            "values":[
+                {
+                    "name":"female",
+                    "value":"female"
+                },
+                {
+                    "name":"male",
+                    "value":"male"
+                },
+                {
+                    "name":"others",
+                    "value":"others"
+                }
+            ]
+        },
+        "card_tier":{
+            "name":"Membership Tier",
+            "description":"",
+            "data_type":"categorical",
+            "selection":"multiple",
+            "values":[
+                {
+                    "name":"Shopper",
+                    "value":"card_tier_Shopper"
+                },
+                {
+                    "name":"Member",
+                    "value":"card_tier_Member"
+                }
+            ]
+        },
+        "member_notify":{
+            "name":"Member Communications",
+            "description":"Members notification methods",
+            "data_type":"categorical",
+            "selection":"multiple",
+            "values":[
+                {
+                    "name":"Is member subscribed to email communications",
+                    "value":"member_sender_issubscribed"
+                },
+                {
+                    "name":"Is member subscribed to SMS communications",
+                    "value":"member_notifysms"
+                },
+                {
+                    "name":"Is member subscribed to PNS communications",
+                    "value":"member_pns_devices_pushalert"
+                }
+            ]
+        },
+        "member_marital_status":{
+            "name":"Marital Status",
+            "description":"",
+            "data_type":"categorical",
+            "selection":"single",
+            "values":[
+                {
+                    "name":"single",
+                    "value":"single"
+                },
+                {
+                    "name":"married",
+                    "value":"married"
+                },
+                {
+                    "name":"others",
+                    "value":"others"
+                }
+            ]
+        },
+        "recency":{
+            "name":"Recency(days)",
+            "description":"The number of days since last purchase",
+            "data_type":"integer"
+        },
+        "recency_group":{
+            "name":"Recency group",
+            "description":"",
+            "data_type":"categorical",
+            "selection":"single",
+            "values":[
+                {
+                    "name":"last 1 week(s)",
+                    "value":"last 1 week(s)"
+                },
+                {
+                    "name":"last 2 week(s)",
+                    "value":"last 2 week(s)"
+                },
+                {
+                    "name":"last 1 month(s)",
+                    "value":"last 1 month(s)"
+                },
+                {
+                    "name":"last 3 month(s)",
+                    "value":"last 3 month(s)"
+                },
+                {
+                    "name":"last 6 month(s)",
+                    "value":"last 6 month(s)"
+                },
+                {
+                    "name":"last 6 -12 month(s)",
+                    "value":"last 6 -12 month(s)"
+                },
+                {
+                    "name":"> 12 month(s)",
+                    "value":"> 12 month(s)"
+                },
+                {
+                    "name":"others",
+                    "value":"others"
+                }
+            ]
+        },
+        "age":{
+            "name":"Member age(years)",
+            "description":"Member age in years. If age = 0, means membership age is unknown.",
+            "data_type":"integer"
+        },
+        "age_group":{
+            "name":"Member age group",
+            "description":"",
+            "data_type":"categorical",
+            "selection":"single",
+            "values":[
+                {
+                    "name":"< 20",
+                    "value":"less_than_20"
+                },
+                {
+                    "name":"20 - 35",
+                    "value":"20_to_35"
+                },
+                {
+                    "name":"36 - 49",
+                    "value":"36_to_49"
+                },
+                {
+                    "name":"50 - 65",
+                    "value":"50_to_65"
+                },
+                {
+                    "name":"65 - 100",
+                    "value":"65_to_100"
+                },
+                {
+                    "name":"100+",
+                    "value":"more_than_100"
+                },
+                {
+                    "name":"others",
+                    "value":"others"
+                }
+            ]
+        },
+        "tenure_days":{
+            "name":"Membership tenure(days)",
+            "description":"No of days since member joined",
+            "data_type":"integer"
+        },
+        "tenure_years":{
+            "name":"Membership tenure(years)",
+            "description":"No of years since member joined",
+            "data_type":"integer"
+        },
+        "tenure_years_group":{
+            "name":"Membership tenure group",
+            "description":"",
+            "data_type":"categorical",
+            "selection":"single",
+            "values":[
+                {
+                    "name":"1 year(s) or less",
+                    "value":"1 year(s) or less"
+                },
+                {
+                    "name":"2 year(s)",
+                    "value":"2 year(s)"
+                },
+                {
+                    "name":"3 year(s)",
+                    "value":"3 year(s)"
+                },
+                {
+                    "name":"4 year(s)",
+                    "value":"4 year(s)"
+                },
+                {
+                    "name":"5 year(s)",
+                    "value":"5 year(s)"
+                },
+                {
+                    "name":"6 year(s) or more",
+                    "value":"6 year(s) or more"
+                }
+            ]
+        },
+        "no_of_vouchers_issued":{
+            "name":"Number of vouchers issued to member",
+            "description":"",
+            "data_type":"integer"
+        },
+        "no_of_vouchers_utilized":{
+            "name":"Number of vouchers utilized by member",
+            "description":"",
+            "data_type":"integer"
+        },
+        "perc_of_vouchers_utilized":{
+            "name":"Percentage of voucher utilized by members",
+            "description":"",
+            "data_type":"float",
+            "max_value":3.1,
+            "min_value":0.0
+        },
+        "voucher_value_issued_last":{
+            "name":"Vouchers value issued",
+            "description":"",
+            "data_type":"group",
+            "fields":{
+                "voucher_value_issued_last_7_days":{
+                    "name":"Vouchers value issued past 7 days",
+                    "data_type":"money"
+                },
+                "voucher_value_issued_last_30_days":{
+                    "name":"Vouchers value issued past 30 days",
+                    "data_type":"money"
+                },
+                "voucher_value_issued_last_90_days":{
+                    "name":"Vouchers value issued past 90 days",
+                    "data_type":"money"
+                },
+                "voucher_value_issued_last_180_days":{
+                    "name":"Vouchers value issued past 180 days",
+                    "data_type":"money"
+                },
+                "voucher_value_issued_last_270_days":{
+                    "name":"Vouchers value issued past 270 days",
+                    "data_type":"money"
+                },
+                "voucher_value_issued_last_360_days":{
+                    "name":"Vouchers value issued past 360 days",
+                    "data_type":"money"
+                }
+            }
+        },
+        "voucher_value_utilized_last":{
+            "name":"Voucher value utilized",
+            "description":"",
+            "data_type":"group",
+            "fields":{
+                "voucher_value_utilized_last_7_days":{
+                    "name":"Vouchers value utilized past 7 days",
+                    "data_type":"money"
+                },
+                "voucher_value_utilized_last_30_days":{
+                    "name":"Vouchers value utilized past 30 days",
+                    "data_type":"money"
+                },
+                "voucher_value_utilized_last_90_days":{
+                    "name":"Vouchers value utilized past 90 days",
+                    "data_type":"money"
+                },
+                "voucher_value_utilized_last_180_days":{
+                    "name":"Vouchers value utilized past 180 days",
+                    "data_type":"money"
+                },
+                "voucher_value_utilized_last_270_days":{
+                    "name":"Vouchers value utilized past 270 days",
+                    "data_type":"money"
+                },
+                "voucher_value_utilized_last_360_days":{
+                    "name":"Vouchers value utilized past 360 days",
+                    "data_type":"money"
+                }
+            }
+        },
+        "no_of_transact_past":{
+            "name":"Number of transactions",
+            "description":"",
+            "data_type":"group",
+            "fields":{
+                "no_of_transact_past_7_days":{
+                    "name":"Number of transactions past 7 days",
+                    "data_type":"integer"
+                },
+                "no_of_transact_past_30_days":{
+                    "name":"Number of transactions past 30 days",
+                    "data_type":"integer"
+                },
+                "no_of_transact_past_90_days":{
+                    "name":"Number of transactions past 90 days",
+                    "data_type":"integer"
+                },
+                "no_of_transact_past_180_days":{
+                    "name":"Number of transactions past 180 days",
+                    "data_type":"integer"
+                },
+                "no_of_transact_past_270_days":{
+                    "name":"Number of transactions past 270 days",
+                    "data_type":"integer"
+                },
+                "no_of_transact_past_360_days":{
+                    "name":"Number of transactions past 360 days",
+                    "data_type":"integer"
+                }
+            }
+        },
+        "transact_nettspent_past":{
+            "name":"Nett Spent",
+            "description":"",
+            "data_type":"group",
+            "fields":{
+                "transact_nettspent_past_7_days":{
+                    "name":"Nett Spent past 7 days",
+                    "data_type":"money"
+                },
+                "transact_nettspent_past_30_days":{
+                    "name":"Nett Spent past 30 days",
+                    "data_type":"money"
+                },
+                "transact_nettspent_past_90_days":{
+                    "name":"Nett Spent past 90 days",
+                    "data_type":"money"
+                },
+                "transact_nettspent_past_180_days":{
+                    "name":"Nett Spent past 180 days",
+                    "data_type":"money"
+                },
+                "transact_nettspent_past_270_days":{
+                    "name":"Nett Spent past 270 days",
+                    "data_type":"money"
+                },
+                "transact_nettspent_past_360_days":{
+                    "name":"Nett Spent past 360 days",
+                    "data_type":"money"
+                }
+            }
+        },
+        "transact_transactpoints_past":{
+            "name":"Transaction points",
+            "description":"",
+            "data_type":"group",
+            "fields":{
+                "transact_transactpoints_past_7_days":{
+                    "name":"Transaction points past 7 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_30_days":{
+                    "name":"Transaction points past 30 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_90_days":{
+                    "name":"Transaction points past 90 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_180_days":{
+                    "name":"Transaction points past 180 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_270_days":{
+                    "name":"Transaction points past 270 days",
+                    "data_type":"integer"
+                },
+                "transact_transactpoints_past_360_days":{
+                    "name":"Transaction points past 360 days",
+                    "data_type":"integer"
+                }
+            }
+        },
+        "no_of_vouchers_issued_by_campaign":{
+            "name":"Number of vouchers issued by campaign",
+            "description":"",
+            "data_type":"integer"
+        },
+        "no_of_vouchers_issued_by_campaign_and_utilized":{
+            "name":"Number of vouchers issued by campaign and utilized",
+            "description":"",
+            "data_type":"integer"
+        },
+        "no_of_past_campaign_hits":{
+            "name":"Number of past campaign hits",
+            "description":"",
+            "data_type":"integer"
+        },
+        "member_most_freq_outlet":{
+            "name":"Member most frequent outlet",
+            "description":"",
+            "data_type":"string",
+            "aggregatable":""
+        },
+        "no_of_unique_visited_outlets":{
+            "name":"Number of uniquely visited outlet",
+            "description":"",
+            "data_type":"integer"
+        },
+        "no_of_blasts_sent":{
+            "name":"Number of blast sent",
+            "description":"Number of email blasts(not campaign) received in the past, at member level",
+            "data_type":"integer"
+        },
+        "no_of_blasts_read":{
+            "name":"Number of blast read",
+            "description":"Number of email blasts(not campaign) read in the past, at member level",
+            "data_type":"integer"
+        },
+        "interest_group":{
+            "name":"Member interest group",
+            "description":"",
+            "data_type":"categorical",
+            "selection":"multiple",
+            "values":[
+                {
+                    "name":"Dancing",
+                    "value":"interest_group_code_Dancing"
+                },
+                {
+                    "name":"Shopping",
+                    "value":"interest_group_code_Shopping"
+                }
+            ]
+        },
+        "campaignqualifiedlog_transact_autoid":{
+            "name":"Number of past campaign hits",
+            "description":"",
+            "data_type":"group",
+            "fields":{
+                "campaignqualifiedlog_transact_autoid_past_7_days":{
+                    "name":"Number of past campaign hits past 7 days",
+                    "data_type":"integer"
+                },
+                "campaignqualifiedlog_transact_autoid_past_30_days":{
+                    "name":"Number of past campaign hits past 30 days",
+                    "data_type":"integer"
+                },
+                "campaignqualifiedlog_transact_autoid_past_90_days":{
+                    "name":"Number of past campaign hits past 90 days",
+                    "data_type":"integer"
+                },
+                "campaignqualifiedlog_transact_autoid_past_180_days":{
+                    "name":"Number of past campaign hits past 180 days",
+                    "data_type":"integer"
+                },
+                "campaignqualifiedlog_transact_autoid_past_270_days":{
+                    "name":"Number of past campaign hits past 270 days",
+                    "data_type":"integer"
+                },
+                "campaignqualifiedlog_transact_autoid_past_360_days":{
+                    "name":"Number of past campaign hits past 360 days",
+                    "data_type":"integer"
+                }
+            }
+        },
+        "rfm_frequency":{
+            "name":"RFM Raw frequency value",
+            "description":"Raw frequency value before binning",
+            "data_type":"integer"
+        },
+        "rfm_frequency_score":{
+            "name":"RFM Frequency Score",
+            "description":"Frequency score of RFM for the latest period",
+            "data_type":"categorical",
+            "selection":"single",
+            "values":[
+                {
+                    "name":0,
+                    "value":0
+                },
+                {
+                    "name":1,
+                    "value":1
+                },
+                {
+                    "name":2,
+                    "value":2
+                },
+                {
+                    "name":3,
+                    "value":3
+                },
+                {
+                    "name":4,
+                    "value":4
+                },
+                {
+                    "name":5,
+                    "value":5
+                },
+                {
+                    "name":6,
+                    "value":6
+                }
+            ]
+        },
+        "rfm_monetary":{
+            "name":"RFM Raw monetary value",
+            "description":"Raw monetary value before binning",
+            "data_type":"integer"
+        },
+        "rfm_monetary_score":{
+            "name":"RFM Monetary Score",
+            "description":"Monetary score of RFM for the latest period",
+            "data_type":"categorical",
+            "selection":"single",
+            "values":[
+                {
+                    "name":0,
+                    "value":0
+                },
+                {
+                    "name":1,
+                    "value":1
+                },
+                {
+                    "name":2,
+                    "value":2
+                },
+                {
+                    "name":3,
+                    "value":3
+                },
+                {
+                    "name":4,
+                    "value":4
+                },
+                {
+                    "name":5,
+                    "value":5
+                },
+                {
+                    "name":6,
+                    "value":6
+                }
+            ]
+        },
+        "rfm_recency":{
+            "name":"RFM Raw recency value",
+            "description":"Raw recency value before binning",
+            "data_type":"integer"
+        },
+        "rfm_recency_score":{
+            "name":"RFM Recency Score",
+            "description":"Recency score of RFM for the latest period",
+            "data_type":"categorical",
+            "selection":"single",
+            "values":[
+                {
+                    "name":0,
+                    "value":0
+                },
+                {
+                    "name":1,
+                    "value":1
+                },
+                {
+                    "name":2,
+                    "value":2
+                },
+                {
+                    "name":3,
+                    "value":3
+                },
+                {
+                    "name":4,
+                    "value":4
+                },
+                {
+                    "name":5,
+                    "value":5
+                }
+            ]
+        },
+        "rfm_score":{
+            "name":"RFM Score",
+            "description":"",
+            "data_type":"integer"
+        },
+        "rfm_segment":{
+            "name":"RFM Segment",
+            "description":"RFM segment for the latest period (eg. Lost, At Risk, etc)",
+            "data_type":"categorical",
+            "selection":"single",
+            "values":[
+                {
+                    "name":"Champions",
+                    "value":"Champions"
+                },
+                {
+                    "name":"Loyal Customers",
+                    "value":"Loyal Customers"
+                },
+                {
+                    "name":"Potential Loyalist",
+                    "value":"Potential Loyalist"
+                },
+                {
+                    "name":"Recent Customers",
+                    "value":"Recent Customers"
+                },
+                {
+                    "name":"Promising",
+                    "value":"Promising"
+                },
+                {
+                    "name":"Need Attention",
+                    "value":"Need Attention"
+                },
+                {
+                    "name":"About To Sleep",
+                    "value":"About To Sleep"
+                },
+                {
+                    "name":"At Risk",
+                    "value":"At Risk"
+                },
+                {
+                    "name":"Don't Lose Them",
+                    "value":"Don't Lose Them"
+                },
+                {
+                    "name":"Hibernating",
+                    "value":"Hibernating"
+                },
+                {
+                    "name":"Lost",
+                    "value":"Lost"
+                }
+            ]
+        },
+        "waiting_period":{
+            "name":"Waiting period",
+            "description":"Predicted optimal waiting period between campaigns",
+            "data_type":"integer"
+        },
+        "burnout":{
+            "name":"Burnout",
+            "description":"Is member likely to burnout from campaign?",
+            "data_type":"integer"
+        },
+        "lapse_prediction":{
+            "name":"Lapsed",
+            "description":"Is this member likely to lapse?",
+            "data_type":"boolean"
+        },
+        "lapse_threshold":{
+            "name":"Lapsed Threshold",
+            "description":"The number of days that correspond to \"lapsed\" status. Based on past purchase interval+2 standard deviation.",
+            "data_type":"float",
+            "max_value":0.0,
+            "min_value":0.0
+        },
+        "membership_status_active":{
+            "name":"Is Member active?",
+            "description":"",
+            "data_type":"boolean"
+        }
+    }
+}

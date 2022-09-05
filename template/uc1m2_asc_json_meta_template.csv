@@ -1,0 +1,5 @@
+group,feature,data_type,selection,name,description,aggregatable
+,min_waiting_period,integer,,Waiting period,Predicted optimal waiting period between campaigns,
+,max_waiting_period,integer,,,,
+,num_responded,integer,,,,
+,best_waiting_time_group,boolean,,,,
