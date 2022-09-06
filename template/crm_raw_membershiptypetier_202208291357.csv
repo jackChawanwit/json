@@ -1,0 +1,9 @@
+"rowversion","autoid","membershiptype_autoid","code","name","addedby","addedon","modifiedby","modifiedon","deletedby","deletedon","deletedreason","tierrank","aimlrank","customercode"
+2022-07-28 06:57:45.552,1,2,Shopper,Shopper,walter,2018-07-09 23:57:00.000,chong,2021-01-07 00:35:00.000,,,,1,1,feomall
+2022-07-28 06:57:45.552,2,2,Member,Member,walter,2018-07-09 23:57:00.000,chong,2021-01-07 00:35:00.000,,,,2,2,feomall
+2022-07-28 06:57:45.552,1,2,Welcome Green,Welcome Green,tricia,2014-06-27 16:58:00.000,tricia,2014-07-31 09:59:00.000,yongliang,2020-03-24 03:51:00.000,,,,starbucks_old
+2022-07-28 06:57:45.552,2,2,Welcome Gold,Welcome Gold,tricia,2014-06-27 16:58:00.000,tricia,2014-07-31 09:59:00.000,yongliang,2020-03-24 03:51:00.000,,,,starbucks_old
+2022-07-28 06:57:45.552,3,2,Unassigned,Unassigned,tricia,2014-07-18 17:36:00.000,yongliang,2020-03-24 03:51:00.000,,,,4,4,starbucks_old
+2022-07-28 06:57:45.552,4,2,Welcome,Welcome,kathleen,2014-06-08 14:30:00.000,yongliang,2020-03-24 03:51:00.000,,,,3,3,starbucks_old
+2022-07-28 06:57:45.552,5,2,Green,Green,kathleen,2014-06-08 14:30:00.000,yongliang,2020-03-24 03:51:00.000,,,,2,2,starbucks_old
+2022-07-28 06:57:45.552,6,2,Gold,Gold,kathleen,2014-06-08 14:30:00.000,yongliang,2020-03-24 03:51:00.000,,,,1,1,starbucks_old
