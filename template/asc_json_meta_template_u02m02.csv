@@ -1,0 +1,4 @@
+group,feature,data_type,selection,name,description,aggregatable
+,blastrecipient_member_id,string,,Member ID,,TRUE
+,lapse_prediction,boolean,,Lapsed,Is this member likely to lapse?,
+,lapse_threshold,float,,Lapsed Threshold,"The number of days that correspond to ""lapsed"" status. Based on past purchase interval+2 standard deviation.",

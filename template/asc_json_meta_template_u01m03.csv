@@ -1,0 +1,3 @@
+group,feature,data_type,selection,name,description,aggregatable
+,blastrecipient_member_id,string,,Member ID,,TRUE
+,burnout,integer,,Burnout,Is member likely to burnout from campaign?,
